@@ -1,0 +1,110 @@
+body {
+    background-color: #77c8fe;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #f1f6c8;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.groceryList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.crossedItem {
+    text-decoration: line-through 2px red;
+    background-color: #f0f0f0;
+}
+
+ul {
+    padding: 0;
+    width: 80%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    padding: 5px;
+    border-bottom: 2px solid #f0f0f0;
+    background-color: #a1c800;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+.cartImage, .bagImage {
+    border-radius: 50%;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+.inputField {
+    display: flex;
+    width: 80%
+}
+
+.addButton {
+    background-color: #a1c800;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.deleteButton {
+    width: 80%;
+    margin-bottom: 30px;
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    background-color:#fb6854;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    .App {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .cartImage {
+        width: 150px;
+    }
+
+    .bagImage {
+        width: 100px;
+    }
+}
